@@ -1,0 +1,141 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #171717;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.title {
+  margin: 2em 0;
+  text-align: center;
+  color: #EDEDED;
+}
+
+.title h1 {
+  font-size: 6rem;
+}
+
+.title p {
+  font-size: 3.5rem;
+  padding-left: 5em;
+}
+
+.search_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search_input .search {
+  width: 70%;
+  border: none;
+  height: 3em;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 0 1em #fff;
+          box-shadow: 0 0 1em #fff;
+  padding-left: 1em;
+}
+
+.search_input .search:focus {
+  outline-style: none;
+}
+
+.search_input .fa-magnifying-glass {
+  cursor: pointer;
+  color: #fff;
+  font-size: 3rem;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  padding: .1em .5em;
+}
+
+.search_box {
+  margin: 0 auto;
+  width: 90%;
+  padding: 2em 0;
+  color: #EDEDED;
+}
+
+.search_box .search_results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 0 1.8em 0;
+  padding: 2em 1em;
+  background-color: #444444;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.search_box .search_results-description {
+  padding: 1em 0;
+}
+
+.search_box .search_results-btn {
+  background-color: #323232;
+  border-radius: 1em;
+  padding: .5em;
+  cursor: pointer;
+}
+
+.search_box .search_results-btn a {
+  text-decoration: none;
+  color: #EDEDED;
+}
+
+@media (min-width: 992px) {
+  .title h1 {
+    font-size: 10rem;
+  }
+  .title p {
+    font-size: 5.5rem;
+  }
+  .search_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    padding: 4em 0;
+  }
+  .search_box .search_results {
+    width: 40%;
+    margin: 2em 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
